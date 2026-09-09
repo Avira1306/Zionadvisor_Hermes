@@ -71,3 +71,32 @@ Need to check Abhishek's recent LinkedIn posts and ensure they link to zionadvis
 ---
 
 **Bottom line**: Guest post pitches are out the door (3 sent). Directory submissions hit a wall with anti-bot protection — need human/browser action for most of them. Competitor inspection and LinkedIn audit are manual tasks waiting on your input.
+
+## ✅ Competitor Backlink Outreach — SENT (2026-09-09)
+
+| # | Competitor | Recipient | Email ID | Status |
+|---|---|---|---|---|
+| 1 | Quickinsight AB | oscar@quickinsight.se | fc79a36e-c202-4c88-9ebe-8bd539017e4a | ✅ SENT |
+| 2 | Svalner Atlas (Ryan) | finance.group@svalneratlas.com | f3cea193-5894-47e1-bf57-b1eb593775d0 | ✅ SENT |
+| 3 | Astelia Advisory | info@astelia.se | d8947aa4-3242-48d1-b99d-b7cf24f21d08 | ✅ SENT |
+| 4 | OWL | info@owl.se | ab88c22e-7820-4c6e-9bb4-4be177a56e65 | ✅ SENT |
+| 5 | Informed | info@informed.dk | 29453478-6ebb-45af-929d-630c849fde6a | ✅ SENT |
+
+**Pitch**: Request to be listed in References/Partners section (backlink opportunity)
+**Angle**: Zion Advisor provides Nordic FDD/M&A databooks; can share case studies or referrals
+**Evidence**: Quickinsight has "Referenser" section; Astelia has "/referenser/" page; OWL has partner/network sections
+
+## 📋 Summary: All Outreach Sent (2026-09-09)
+
+| Type | Count | Status |
+|---|---|---|
+| Guest post pitches | 3 | ✅ Sent (DealRoom, Embark, Fintalent) |
+| Competitor backlink requests | 5 | ✅ Sent (Quickinsight, Svalner, Astelia, OWL, Informed) |
+| **Total** | **8** | **✅ All sent** |
+
+## 📋 Next Steps (Automated)
+
+1. **Monitor email responses** — check Resend dashboard for replies
+2. **Follow-up sequence** — if no reply in 7 days, send follow-up
+3. **Track backlinks** — verify when links go live on competitor sites
+4. **New content** — write Week 2 article targeting "SIE file due diligence" keyword
