@@ -342,6 +342,13 @@ input:focus, select:focus, textarea:focus {
 textarea { min-height: 140px; resize: vertical; }
 .form-note { font-size: .85rem; color: var(--muted); margin-top: 1rem; }
 
+/* ---------- Intro block (centered column) ---------- */
+.intro-block {
+    max-width: 760px;
+    margin-inline: auto;
+    text-align: left;
+}
+
 /* ---------- Testimonials ---------- */
 .testimonial-credentials {
     text-align: center;
