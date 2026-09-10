@@ -1,9 +1,6 @@
 # ZIP archives in root
 ZA_*.zip
 
-# Binary logo (already in assets/)
-logo.png
-
 # OS files
 .DS_Store
 Thumbs.db
