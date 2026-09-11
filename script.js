@@ -157,7 +157,8 @@
 
             fetch(intakeForm.action, {
                 method: 'POST',
-                body: formData
+                body: formData,
+                headers: { 'Accept': 'application/json' }
             }).then(function (response) {
                 console.log('Response status:', response.status);
                 if (response.ok) {
