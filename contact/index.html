@@ -70,17 +70,11 @@
                 <li>A clear recommendation on deliverables, required source files, timeline, and review gates.</li>
             </ul>
 
-            <form class="form-panel" method="POST" action="https://formspree.io/abhishek.bhandari@zionadvisor.com" novalidate>
-                <!-- Honeypot field - hidden from humans, bots fill it -->
-                <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
-                    <label for="website">Website</label>
-                    <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
-                </div>
+            <form id="contact-form" class="form-panel" method="POST" novalidate>
                 <h2>Project Intake</h2>
                 <input type="hidden" name="_subject" value="New Zion Advisor Inquiry">
-                <input type="hidden" name="_replyto" value="email">
-                <div class="form-field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
-                <div class="form-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+                <div class="form-field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required data-fs-field></div>
+                <div class="form-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required data-fs-field></div>
                 <div class="form-field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
                 <div class="form-field"><label for="f-timeline">Timeline</label>
                     <select id="f-timeline" name="timeline">
@@ -102,9 +96,9 @@
                         <option>Other</option>
                     </select>
                 </div>
-                <div class="form-field"><label for="f-msg">What should we know?</label><textarea id="f-msg" name="message"></textarea></div>
-                <button type="submit" class="btn" data-event="form_submit_contact">Send message</button>
-                <p class="form-status form-note" hidden role="status"></p>
+                <div class="form-field"><label for="f-msg">What should we know?</label><textarea id="f-msg" name="message" data-fs-field></textarea></div>
+                <button type="submit" class="btn" data-event="form_submit_contact" data-fs-submit-btn>Send message</button>
+                <div class="form-status form-note" data-fs-success data-fs-error role="status" hidden></div>
                 <p class="form-note">Please do not upload sensitive files through this form. We will arrange a secure intake path if files are needed.</p>
             </form>
         </div>
@@ -167,5 +161,29 @@
         </div>
     </footer>
     <script src="/script.js"></script>
+    <!-- Formspree AJAX -->
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', {
+        formElement: '#contact-form',
+        formId: 'mbgjwpky',
+        data: { source: 'contact-page' },
+        onSuccess: function (context, result) {
+          // GA4 conversion event (mirror of the old manual handler)
+          if (typeof trackEvent === 'function') {
+            trackEvent('generate_lead', {
+              event_category: 'conversion',
+              event_label: 'Contact Form (Formspree)',
+              page_path: context.form.action || window.location.pathname,
+              value: 1
+            });
+          }
+          // Re-enable button + reset (Formspree lib resets automatically when data-fs-success is present,
+          // but keep explicit reset for safety so the form is clean for a second submission)
+          context.form.reset();
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>

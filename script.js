@@ -124,68 +124,8 @@
         update();
     }
 
-    // ===== CONTACT FORM → Formspree =====
-    var intakeForm = document.querySelector('form[action*="formspree"]');
-    if (intakeForm) {
-        intakeForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            console.log('Form submit triggered');
-            // Honeypot check - if bot filled the hidden field, reject
-            var honeypot = intakeForm.querySelector('input[name="website"]');
-            if (honeypot && honeypot.value) {
-                console.log('Bot detected - honeypot filled');
-                return; // silently reject bot submissions
-            }
-            var status = intakeForm.querySelector('.form-status');
-            var btn = intakeForm.querySelector('button[type="submit"]');
-            if (!status) {
-                console.error('Status element not found');
-                return;
-            }
-            if (btn) btn.disabled = true;
-            status.textContent = 'Sending...';
-            status.hidden = false;
-            status.style.display = 'block';
-            status.style.padding = '1rem';
-            status.style.borderRadius = '8px';
-            status.style.background = '#f0f4f8';
-            status.style.marginTop = '1rem';
-
-            var formData = new FormData(intakeForm);
-            // Remove honeypot from submission
-            formData.delete('website');
-
-            fetch(intakeForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            }).then(function (response) {
-                console.log('Response status:', response.status);
-                if (response.ok) {
-                    status.textContent = 'Thank you — your message has been sent. We respond within 1 business day.';
-                    status.style.background = '#d4edda';
-                    status.style.color = '#155724';
-                    intakeForm.reset();
-                    // GA4 conversion event
-                    trackEvent('generate_lead', {
-                        'event_category': 'conversion',
-                        'event_label': 'Contact Form',
-                        'page_path': window.location.pathname,
-                        'value': 1
-                    });
-                } else {
-                    status.textContent = 'Something went wrong (HTTP ' + response.status + '). Please try again or email us directly.';
-                    status.style.background = '#f8d7da';
-                    status.style.color = '#721c24';
-                }
-            }).catch(function (error) {
-                console.error('Form submission error:', error);
-                status.textContent = 'Network error. Please check your connection and try again, or email us directly.';
-                status.style.background = '#f8d7da';
-                status.style.color = '#721c24';
-            }).finally(function () {
-                if (btn) btn.disabled = false;
-            });
-        });
-    }
+    // ===== FORM HANDLING =====
+    // The contact form is now wired via @formspree/ajax (CDN + data attributes in HTML).
+    // Manual fetch handlers removed so @formspree/ajax handles submission, button state,
+    // validation, and success/error messages directly.
 })();
