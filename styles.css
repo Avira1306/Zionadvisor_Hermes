@@ -349,6 +349,12 @@ textarea { min-height: 140px; resize: vertical; }
     text-align: left;
 }
 
+/* ---------- Paragraph centering fix ---------- */
+.container > p:not(.lead):not(.form-note),
+.section > .container > p:not(.lead):not(.form-note) {
+    margin-inline: auto;
+}
+
 /* ---------- Testimonials ---------- */
 .testimonial-credentials {
     text-align: center;
