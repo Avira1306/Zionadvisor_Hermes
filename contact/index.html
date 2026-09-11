@@ -71,6 +71,11 @@
             </ul>
 
             <form class="form-panel" method="POST" action="https://formsubmit.co/abhishek.bhandari@zionadvisor.com" novalidate>
+                <!-- Honeypot field - hidden from humans, bots fill it -->
+                <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+                    <label for="website">Website</label>
+                    <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
                 <h2>Project Intake</h2>
                 <input type="hidden" name="_subject" value="New Zion Advisor Inquiry">
                 <input type="hidden" name="_captcha" value="false">

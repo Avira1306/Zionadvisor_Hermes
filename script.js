@@ -129,6 +129,11 @@
     if (intakeForm) {
         intakeForm.addEventListener('submit', function (e) {
             e.preventDefault();
+            // Honeypot check - if bot filled the hidden field, reject
+            var honeypot = intakeForm.querySelector('input[name="website"]');
+            if (honeypot && honeypot.value) {
+                return; // silently reject bot submissions
+            }
             var status = intakeForm.querySelector('.form-status');
             var btn = intakeForm.querySelector('button[type="submit"]');
             if (!status) return;
