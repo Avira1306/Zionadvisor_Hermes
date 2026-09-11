@@ -124,8 +124,8 @@
         update();
     }
 
-    // ===== CONTACT FORM → formsubmit.co =====
-    var intakeForm = document.querySelector('form[action*="formsubmit.co"]');
+    // ===== CONTACT FORM → Formspree =====
+    var intakeForm = document.querySelector('form[action*="formspree"]');
     if (intakeForm) {
         intakeForm.addEventListener('submit', function (e) {
             e.preventDefault();
