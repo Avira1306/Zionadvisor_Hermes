@@ -823,4 +823,34 @@ table { display: block; overflow-x: auto; white-space: normal; }
     header .container { flex-wrap: wrap; }
     nav.site-nav ul { flex-direction: column; gap: .75em; }
     .logo img { height: 44px; }
+    
+    /* Mobile tap targets — min 48x48px for touch */
+    nav.site-nav a,
+    .btn,
+    .nav-toggle { min-height: 48px; min-width: 48px; display: inline-flex; align-items: center; justify-content: center; }
+    
+    /* Single-column grids on mobile */
+    .grid { grid-template-columns: 1fr; gap: 1.25rem; }
+    
+    /* Smaller padding on mobile */
+    .hero { padding: clamp(2.5rem, 6vw, 4rem) 0; }
+    .section { padding: clamp(2rem, 5vw, 3.5rem) 0; }
+    
+    /* Full-width cards */
+    .card { max-width: 100%; }
+    
+    /* Tables scroll horizontally on mobile */
+    table { display: block; overflow-x: auto; white-space: nowrap; }
+    
+    /* CTA band stacking */
+    .cta-band .btn-row-center { flex-direction: column; align-items: center; }
+    .cta-band .btn { width: 100%; max-width: 320px; }
+}
+
+@media (max-width: 480px) {
+    html { font-size: 15px; }
+    h1 { font-size: clamp(1.7rem, 6vw, 2.4rem); }
+    h2 { font-size: clamp(1.3rem, 5vw, 1.8rem); }
+    .hero p { font-size: 1rem; }
+    .container { padding: 0 1rem; }
 }
