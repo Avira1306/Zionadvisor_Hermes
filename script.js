@@ -128,4 +128,19 @@
     // The contact form is now wired via @formspree/ajax (CDN + data attributes in HTML).
     // Manual fetch handlers removed so @formspree/ajax handles submission, button state,
     // validation, and success/error messages directly.
+
+    // ===== SCROLL TO TOP =====
+    var scrollBtn = document.querySelector('.scroll-top');
+    if (scrollBtn) {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 400) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        }, { passive: true });
+        scrollBtn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 })();

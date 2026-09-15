@@ -472,20 +472,123 @@ th, td { text-align: left; padding: .75em .9em; border-bottom: 1px solid var(--l
 th { background: var(--paper-2); color: var(--ink); font-weight: 600; }
 tbody tr:hover { background: var(--paper-2); }
 
-/* ---------- Footer (navy) ---------- */
+/* ---------- Footer (navy, 4-column) ---------- */
 footer {
-    background: var(--navy-3);
+    background: var(--navy);
     color: var(--on-navy-dim);
     border-top: 3px solid var(--gold);
-    padding: 3em 0 2em;
-    text-align: center;
+    padding: 3em 0 0;
+    text-align: left;
     font-size: .95rem;
+    position: relative;
 }
 footer a { color: var(--on-navy-dim); }
 footer a:hover { color: var(--gold); text-decoration: none; }
-footer nav { margin: 1rem 0; }
-footer .footer-links a { margin: 0 .75em; }
 footer img { height: 46px; width: auto; margin-bottom: 1rem; }
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.footer-col h4 {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .85rem;
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li {
+    margin-bottom: .6rem;
+}
+
+.footer-brand {
+    margin-bottom: 1.25rem;
+}
+
+.footer-tagline {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    opacity: .85;
+}
+
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--navy-2);
+    color: var(--on-navy);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .85rem;
+    transition: background .2s ease;
+}
+.footer-social:hover { background: var(--gold); color: var(--navy); }
+
+.footer-location {
+    font-size: .9rem;
+    line-height: 1.6;
+    margin-bottom: .75rem;
+}
+
+.footer-bottom {
+    margin-top: 2.5rem;
+    padding: 1.25rem clamp(1rem, 4vw, 2rem);
+    background: var(--navy-3);
+    text-align: center;
+    font-size: .85rem;
+}
+
+/* Scroll-to-top button */
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .3s ease, transform .3s ease;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-top.visible { opacity: 1; transform: translateY(0); }
+.scroll-top:hover { background: var(--gold-deep); }
+
+/* Mobile footer */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .scroll-top { bottom: 1rem; right: 1rem; width: 40px; height: 40px; font-size: 1.2rem; }
+}
 
 /* ---------- About: approach grid + stats wall ---------- */
 .approach-grid {
