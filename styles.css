@@ -156,6 +156,10 @@ nav a:hover { color: var(--navy); text-decoration: none; border-bottom-color: va
     border: 1px solid rgba(191,163,111,.45); border-radius: 999px;
     padding: .45em 1.2em; margin-bottom: 1.5rem;
 }
+.hero-tagline {
+    font-size: 1.25rem; font-weight: 600; color: #fff;
+    margin: 0 auto 1rem; max-width: 68ch;
+}
 .breadcrumb {
     font-size: .85rem; color: var(--muted); margin-bottom: 1.25rem; text-align: left;
 }
