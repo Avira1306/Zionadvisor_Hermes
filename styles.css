@@ -521,8 +521,13 @@ footer img { height: 46px; width: auto; margin-bottom: 1rem; }
     margin-bottom: 1.25rem;
 }
 .footer-brand img {
-    height: 46px;
-    width: auto;
+    width: 148px;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 6px;
     margin-bottom: .75rem;
     display: block;
 }

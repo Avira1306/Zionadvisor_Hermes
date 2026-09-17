@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="300" height="64" role="img" aria-label="Zion Advisor">
+  <!-- Footer (dark background) variant: white ZION, gold ADVISOR, gold monogram mark -->
+  <defs>
+    <linearGradient id="goldF" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4b878"/>
+      <stop offset="100%" stop-color="#bfa36f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Monogram tile: gold border, navy fill (matches footer bg so it blends), gold ZA -->
+  <g transform="translate(2,6)">
+    <rect x="0.75" y="0.75" width="48.5" height="48.5" rx="6"
+          fill="#152238" stroke="url(#goldF)" stroke-width="1.5"/>
+    <text x="25" y="36" text-anchor="middle"
+          font-family="Georgia, 'Times New Roman', serif" font-size="24"
+          letter-spacing="1" fill="url(#goldF)">ZA</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="62" y="34"
+        font-family="Georgia, 'Times New Roman', serif" font-size="27"
+        letter-spacing="2.5" fill="#ffffff">ZION<tspan fill="#bfa36f"> ADVISOR</tspan></text>
+
+  <!-- Gold rule + descriptor -->
+  <rect x="63" y="42" width="170" height="1" fill="#bfa36f" opacity="0.55"/>
+  <text x="63" y="55"
+        font-family="Arial, Helvetica, sans-serif" font-size="8"
+        letter-spacing="2.6" fill="#c8cfd9">FINANCIAL DUE DILIGENCE</text>
+</svg>
