@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAF-T Financial Due Diligence | Reading a Norwegian Audit File | Zion Advisor</title>
+    <meta name="description" content="SAF-T Financial is Norway's mandated audit file. Here is how to read it, what it contains, and why it shortens Norwegian diligence.">
+    <link rel="canonical" content="https://www.zionadvisor.com/insights/saf-t-financial-due-diligence/">
+    <meta property="og:title" content="SAF-T Financial Due Diligence: Reading a Norwegian Audit File">
+    <meta property="og:description" content="SAF-T Financial is Norway's mandated audit file. Here is how to read it, what it contains, and why it shortens Norwegian diligence.">
+    <meta property="og:url" content="https://www.zionadvisor.com/insights/saf-t-financial-due-diligence/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://www.zionadvisor.com/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SAF-T Financial Due Diligence: Reading a Norwegian Audit File">
+    <meta name="twitter:description" content="SAF-T Financial is Norway's mandated audit file. Here is how to read it, what it contains, and why it shortens Norwegian diligence.">
+    <meta name="theme-color" content="#152238">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/logo-mark.png">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"SAF-T Financial Due Diligence: Reading a Norwegian Audit File","description":"How SAF-T Financial shortens Norwegian diligence, what it contains, and how to request it correctly.","author":{"@type":"Organization","name":"Zion Advisor"},"publisher":{"@type":"Organization","name":"Zion Advisor","logo":{"@type":"ImageObject","url":"https://www.zionadvisor.com/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zionadvisor.com/insights/saf-t-financial-due-diligence/"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.zionadvisor.com/"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://www.zionadvisor.com/insights/"},{"@type":"ListItem","position":3,"name":"SAF-T Financial Due Diligence","item":"https://www.zionadvisor.com/insights/saf-t-financial-due-diligence/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is SAF-T Financial?","acceptedAnswer":{"@type":"Answer","text":"Norway's mandated standard audit file. It is an XML document structured as Header, Master Files and General Ledger Entries, and it carries transaction-level detail."}},{"@type":"Question","name":"Which version applies?","acceptedAnswer":{"@type":"Answer","text":"Version 1.30 became the required format for accounting periods beginning 1 January 2025. It is the version we read on current Norwegian engagements."}},{"@type":"Question","name":"How does SAF-T compare to the Swedish SIE4?","acceptedAnswer":{"@type":"Answer","text":"They do similar jobs in different formats. SAF-T Financial gives the same completeness for a Norwegian target that SIE4 gives for a Swedish one, so the analysis starts from source rather than from a summary."}},{"@type":"Question","name":"Which ledger systems produce SAF-T?","acceptedAnswer":{"@type":"Answer","text":"Tripletex, Visma, PowerOffice Go and Xledger cover most of the SME and mid-market segment. If the target runs something less common, send a sample export and we confirm we can read it."}},{"@type":"Question","name":"Does SAF-T shorten diligence?","acceptedAnswer":{"@type":"Answer","text":"Yes. Because transaction-level data is reliably available, the reconstruction phase that usually takes the first week of an offshore engagement is largely eliminated."}}]}</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="/"><img src="/assets/logo.png" alt="Zion Advisor — M&amp;A databooks and financial due diligence"></a></div>
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/clients/">Clients</a></li>
+                    <li><a href="/nordics/">Nordics</a></li>
+                    <li><a href="/resources/sample-databook/">Sample Databook</a></li>
+                    <li><a href="/insights/">Insights</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="/">Home</a> / <a href="/insights/">Insights</a> / <span aria-current="page">SAF-T Financial Due Diligence</span></div>
+            <span class="hero-kicker">Norwegian audit file &middot; SAF-T v1.30 &middot; NGAAP &middot; Tripletex</span>
+            <h1>SAF-T Financial Due Diligence</h1>
+            <p>SAF-T Financial carries the same completeness for a Norwegian target that SIE4 gives for a Swedish one. The first-cut audit file replaces the reconstruction phase — the analysis starts from source.</p>
+            <a href="/contact/" class="btn">Discuss a deal</a>
+            <a href="/nordics/norway/" class="btn btn-outline">Norwegian deal support</a>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2>What SAF-T Financial actually is</h2>
+            <p class="lead">SAF-T Financial is Norway's mandated standard audit file. Since version 1.30 became required for accounting periods beginning 1 January 2025, almost every Norwegian company above the small-entity threshold produces one.</p>
+            <p>It is an XML document structured in three parts:</p>
+            <ul>
+                <li><strong>Header</strong> — the entity details, fiscal year, reporting currency and reporting basis.</li>
+                <li><strong>Master Files</strong> — the chart of accounts, tax codes, cost centres and other static structures.</li>
+                <li><strong>General Ledger Entries</strong> — the actual transactions: every entry for the fiscal year, with account, amount, date and narrative.</li>
+            </ul>
+            <p>The practical effect is that the monthly profit and loss, the balance sheet, account-level detail and the full audit trail all come from one structured file rather than from bespoke extracts the seller's controller has to build.</p>
+        </div>
+    </section>
+    <section class="section dark-bg">
+        <div class="container">
+            <h2>Why it changes the engagement</h2>
+            <p class="lead">On a typical offshore diligence engagement, the first week disappears into reconstruction. Someone re-keys or re-maps whatever the seller managed to export, then reconciles it back to the reported numbers before any analysis begins.</p>
+            <p class="lead">With a SAF-T Financial export, that phase largely disappears. From one ingestion we can derive everything needed for a first-cut databook.</p>
+            <p>Because SAF-T is mandatory rather than voluntary, transaction-level data is reliably available on Norwegian targets. That shortens the reconstruction phase and makes the first cut faster and cheaper than a comparable UK or US mandate.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2>The ledger systems that produce it</h2>
+            <div class="grid">
+                <div class="card"><h3>Tripletex</h3><p>The dominant cloud ledger for Norwegian SMEs. Produces a clean SAF-T Financial export.</p></div>
+                <div class="card"><h3>Visma</h3><p>Broad presence across Norwegian SMEs and mid-market, including Visma Accounting and Visma Severa.</p></div>
+                <div class="card"><h3>PowerOffice Go</h3><p>Strong in the SME segment, with native SAF-T export.</p></div>
+                <div class="card"><h3>Xledger</h3><p>Popular with growing SMEs and mid-market companies; supports SAF-T Financial export.</p></div>
+            </div>
+            <p>In every case we take the export the system natively produces. If a target runs something less common, send a sample export and we will confirm we can read it before you commit to anything.</p>
+        </div>
+    </section>
+    <section class="section dark-bg">
+        <div class="container">
+            <h2>NGAAP versus IFRS — the Norwegian angle</h2>
+            <p class="lead">Most Norwegian companies report under NGAAP (Norwegian Generally Accepted Accounting Standards). Listed groups and some larger entities report under IFRS.</p>
+            <p>NGAAP permits some treatments that diverge from IFRS. We bridge reported NGAAP figures onto the basis the buyer is underwriting and show the bridge, rather than presenting a restated number without workings.</p>
+            <p>The divergences that most often move EBITDA are development costs, provisions and lease treatment — the same three that matter for Swedish K2 versus K3.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2>How a Norwegian diligence engagement runs</h2>
+            <div class="grid">
+                <div class="card"><h3>First request</h3><p>Send the data room index or a sample SAF-T Financial export. We confirm scope and timeline within one business day, before any engagement letter.</p></div>
+                <div class="card"><h3>Source data</h3><p>The SAF-T Financial export carries what we need for most SMEs and mid-market targets. For larger groups we add the consolidated management pack.</p></div>
+                <div class="card"><h3>First cut</h3><p>Within 48-72 hours we return the derived monthly profit and loss, balance sheet, account-level cuts and a working-capital estimate, in English.</p></div>
+                <div class="card"><h3>Full databook</h3><p>Schedules tie to voucher-level source because they come straight from the ledger export rather than a retyped trial balance.</p></div>
+            </div>
+            <p class="lead" style="max-width:none;">No minimum commitment. A single databook is a low-risk way to see the standard before deciding on a larger engagement.</p>
+        </div>
+    </section>
+    <section class="section cta-band">
+        <div class="container">
+            <h2>Norwegian target on your desk?</h2>
+            <p class="lead">Send the ledger export or the data room index. We will confirm scope and timing within one business day.</p>
+            <a href="/contact/" class="btn">Book a consult</a>
+            <a href="/resources/due-diligence-checklist/" class="btn btn-outline">Get the data-request list</a>
+            <p style="margin-top:1.25rem;font-size:.95rem;text-align:center;">Or email <a href="mailto:abhishek.bhandari@zionadvisor.com">abhishek.bhandari@zionadvisor.com</a> directly.</p>
+        </div>
+    </section>
+</main>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="/assets/logo.png" alt="Zion Advisor">
+                    <p class="footer-tagline">Senior-led transaction advisory and financial due diligence across the Nordics.</p>
+                </div>
+                <p class="footer-location">Gurgaon, India — Global remote delivery</p>
+                <p><a href="mailto:abhishek.bhandari@zionadvisor.com">abhishek.bhandari@zionadvisor.com</a></p>
+                <a href="https://www.linkedin.com/company/zion-advisor/" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener">Li</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services/financial-due-diligence/">Financial Due Diligence</a></li>
+                    <li><a href="/services/ma-databooks/">M&amp;A Databooks</a></li>
+                    <li><a href="/services/working-capital/">Working Capital Peg</a></li>
+                    <li><a href="/services/vendor-assistance/">Vendor Assistance</a></li>
+                    <li><a href="/engagement-models/">Engagement Models</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Geographies</h4>
+                <ul>
+                    <li><a href="/nordics/sweden/">Sweden</a></li>
+                    <li><a href="/nordics/norway/">Norway</a></li>
+                    <li><a href="/nordics/denmark/">Denmark</a></li>
+                    <li><a href="/nordics/finland/">Finland</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="/insights/">Insights</a></li>
+                    <li><a href="/resources/sample-databook/">Sample Databook</a></li>
+                    <li><a href="/case-studies/">Case Studies</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="js-year">2026</span> Zion Advisor LLP. All rights reserved.</p>
+        </div>
+    </footer>
+    <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+    <script src="/script.js"></script>
+</body>
+</html>
