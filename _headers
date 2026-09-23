@@ -1,0 +1,5 @@
+/seo-reports/*
+  Cache-Control: no-store, no-cache, must-revalidate
+
+/*
+  Cache-Control: public, max-age=3600, s-maxage=86400
