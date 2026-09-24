@@ -192,8 +192,8 @@
         data: { source: 'contact-page' },
         onSuccess: function (context, result) {
           // GA4 conversion event (mirror of the old manual handler)
-          if (typeof trackEvent === 'function') {
-            trackEvent('generate_lead', {
+          if (typeof window.trackEvent === 'function') {
+            window.trackEvent('generate_lead', {
               event_category: 'conversion',
               event_label: 'Contact Form (Formspree)',
               page_path: context.form.action || window.location.pathname,

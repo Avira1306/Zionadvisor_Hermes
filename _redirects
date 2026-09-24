@@ -1,2 +1,24 @@
 /services/transaction-advisory/sweden/ https://www.zionadvisor.com/nordics/sweden/ 301
 /services/financial-due-diligence/sweden/ https://www.zionadvisor.com/nordics/sweden/ 301
+# Norway: consolidate into the page Google already ranks for "transaction advisory norway"
+/services/transaction-advisory/norway/ https://www.zionadvisor.com/nordics/norway/ 301
+/services/transaction-advisory/norway https://www.zionadvisor.com/nordics/norway/ 301
+
+# Duplicate article (canonical already points to the -norwegian-groups version)
+/insights/xledger-vs-visma/ https://www.zionadvisor.com/insights/xledger-vs-visma-norwegian-groups/ 301
+/insights/xledger-vs-visma https://www.zionadvisor.com/insights/xledger-vs-visma-norwegian-groups/ 301
+
+# Old doubled-path article URLs
+/insights/insights/* https://www.zionadvisor.com/insights/:splat 301
+
+# Legacy .html URLs from the previous site (still shown in Google, currently 404)
+/about.html https://www.zionadvisor.com/about/ 301
+/contact.html https://www.zionadvisor.com/contact/ 301
+/services.html https://www.zionadvisor.com/services/ 301
+/insights.html https://www.zionadvisor.com/insights/ 301
+/case-studies.html https://www.zionadvisor.com/case-studies/ 301
+/templates.html https://www.zionadvisor.com/resources/ 301
+/privacy.html https://www.zionadvisor.com/security/ 301
+/navigating-m-a-landscape.html https://www.zionadvisor.com/insights/ 301
+/index.pre-feedback.html https://www.zionadvisor.com/ 301
+/index.pre-feedback https://www.zionadvisor.com/ 301
