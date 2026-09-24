@@ -28,6 +28,15 @@
             gtag('event', name, params || {});
         }
     }
+    window.trackEvent = trackEvent; // used by inline Formspree handlers on /contact/ and /resources/
+
+    // ===== EMAIL CLICK TRACKING (key event in GA4) =====
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+            trackEvent('email_click', { 'event_category': 'conversion', 'page_path': window.location.pathname });
+        });
+    });
+    // file_download is sent automatically by GA4 enhanced measurement
 
     // ===== CTA CLICK TRACKING =====
     document.querySelectorAll('.btn, a.btn').forEach(function (btn) {

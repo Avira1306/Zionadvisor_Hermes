@@ -3,3 +3,6 @@
 
 /*
   Cache-Control: public, max-age=3600, s-maxage=86400
+
+https://zionadvisor-bho.pages.dev/*
+  X-Robots-Tag: noindex

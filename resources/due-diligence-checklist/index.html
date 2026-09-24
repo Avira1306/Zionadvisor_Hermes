@@ -90,9 +90,10 @@
             <div class="container">
                 <h2>Download the Full Checklist</h2>
                 <p>Enter your email below to receive the complete, in-depth Due Diligence Data Request Checklist directly to your inbox.</p>
-                <form action="#" method="POST" class="download-form">
-                    <input type="email" name="email" placeholder="Your Work Email" required>
-                    <button type="submit" class="btn">Download Now</button>
+                <form id="checklist-form" method="POST" class="download-form">
+                    <input type="email" name="email" placeholder="Your Work Email" required data-fs-field>
+                    <button type="submit" class="btn" data-fs-submit-btn>Send me the checklist</button>
+                    <div class="form-status form-note" data-fs-success data-fs-error role="status" hidden></div>
                 </form>
                 <p><small>Your information will be kept confidential and used only to send you the checklist.</small></p>
             </div>
@@ -172,5 +173,20 @@
     <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
 
     <script src="/script.js"></script>
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', {
+        formElement: '#checklist-form',
+        formId: 'mbgjwpky',
+        data: { source: 'dd-checklist-download' },
+        onSuccess: function (context) {
+          if (typeof window.trackEvent === 'function') {
+            window.trackEvent('generate_lead', { event_category: 'conversion', event_label: 'DD Checklist Request', value: 1 });
+          }
+          context.form.reset();
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
