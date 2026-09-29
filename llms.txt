@@ -1,4 +1,5 @@
 # Zion Advisor
+﻿# Zion Advisor
 
 > Zion Advisor is a senior-led financial due diligence (FDD) boutique for Nordic M&A. We build QoE analyses, working capital (NWC peg) analyses and M&A databooks directly from Swedish SIE4 and Norwegian SAF-T accounting files, bridge K2/K3 and NGAAP to IFRS, and deliver a first-cut databook in 48-72 hours with senior review. Founder: Abhishek Bhandari. Based in Gurugram, India; focus on Sweden, Norway, Denmark and Finland.
 
