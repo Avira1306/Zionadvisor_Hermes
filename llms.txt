@@ -1,0 +1,40 @@
+﻿# Zion Advisor
+
+> Zion Advisor is a senior-led financial due diligence (FDD) boutique for Nordic M&A. We build QoE analyses, working capital (NWC peg) analyses and M&A databooks directly from Swedish SIE4 and Norwegian SAF-T accounting files, bridge K2/K3 and NGAAP to IFRS, and deliver a first-cut databook in 48-72 hours with senior review. Founder: Abhishek Bhandari. Based in Gurugram, India; focus on Sweden, Norway, Denmark and Finland.
+
+## Services
+- [Financial due diligence](https://www.zionadvisor.com/services/financial-due-diligence/): buy-side and sell-side FDD and QoE
+- [M&A databooks](https://www.zionadvisor.com/services/ma-databooks/): audit-ready databooks, also for the Nordics
+- [Working capital](https://www.zionadvisor.com/services/working-capital/): NWC and peg analysis
+- [Vendor assistance](https://www.zionadvisor.com/services/vendor-assistance/)
+- [Carve-out and separation](https://www.zionadvisor.com/services/carve-out-separation/)
+- [SPA and closing advisory](https://www.zionadvisor.com/services/spa-closing-advisory/)
+- [Valuations](https://www.zionadvisor.com/services/valuations/)
+
+## Nordic coverage
+- [Nordics overview](https://www.zionadvisor.com/nordics/)
+- [Sweden](https://www.zionadvisor.com/nordics/sweden/)
+- [Norway](https://www.zionadvisor.com/nordics/norway/)
+- [Denmark](https://www.zionadvisor.com/nordics/denmark/)
+- [Finland](https://www.zionadvisor.com/nordics/finland/)
+
+## Guides
+- [SIE4 due diligence checklist](https://www.zionadvisor.com/insights/sie4-due-diligence-checklist/)
+- [SIE files in due diligence](https://www.zionadvisor.com/insights/sie-file-due-diligence/)
+- [SAF-T financial due diligence (Norway)](https://www.zionadvisor.com/insights/saf-t-financial-due-diligence/)
+- [K2/K3 due diligence (Sweden)](https://www.zionadvisor.com/insights/k2-k3-due-diligence/)
+- [FDD vs QoE](https://www.zionadvisor.com/insights/fdd-vs-qoe/)
+- [Light QoE vs full QoE](https://www.zionadvisor.com/insights/light-qoe-vs-full-qoe/)
+- [EBITDA adjustments in due diligence](https://www.zionadvisor.com/insights/ebitda-adjustment-due-diligence/)
+- [EBITDA add-backs](https://www.zionadvisor.com/insights/ebitda-addbacks/)
+- [Working capital peg](https://www.zionadvisor.com/insights/working-capital-peg/)
+- [NWC peg analysis](https://www.zionadvisor.com/insights/nwc-peg-analysis/)
+- [Vendor due diligence in the Nordics](https://www.zionadvisor.com/insights/vendor-due-diligence-nordics/)
+- [Financial due diligence in Sweden for foreign buyers](https://www.zionadvisor.com/insights/financial-due-diligence-sweden-foreign-buyers/)
+- [Red flags in lower mid-market Nordic acquisitions](https://www.zionadvisor.com/insights/red-flags-lower-mid-market-nordic-acquisitions/)
+- [Xledger vs Visma for Norwegian groups](https://www.zionadvisor.com/insights/xledger-vs-visma-norwegian-groups/)
+- [Founder-led Swedish businesses need different diligence](https://www.zionadvisor.com/insights/why-founder-led-swedish-businesses-need-different-diligence/)
+- [Audit-ready M&A databook](https://www.zionadvisor.com/insights/audit-ready-ma-databook/)
+
+## Contact
+- [Contact](https://www.zionadvisor.com/contact/)
