@@ -1000,3 +1000,6 @@ table { display: block; overflow-x: auto; white-space: normal; }
     .cookie-actions { width: 100%; }
     .cookie-btn { flex: 1; }
 }
+
+/* centred note under the databook download button */
+.form-note.download-note { text-align: center; max-width: 640px; margin: 1.25rem auto 0; font-size: .95rem; }
