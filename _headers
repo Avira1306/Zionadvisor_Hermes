@@ -3,6 +3,9 @@
 
 /*
   Cache-Control: public, max-age=3600, s-maxage=86400
+  Strict-Transport-Security: max-age=15552000
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 https://zionadvisor-bho.pages.dev/*
   X-Robots-Tag: noindex
